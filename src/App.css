@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.ResumePage {
+    border: 1px solid #000000;
+    height: 1169px;
+    width: 747px;
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ResumeHeader {
+    width: 100%;
+    text-align: center;
+    margin-top: 3vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.NameHeader {
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 1vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ContactInfo {
+    font-size: 10pt;
+    margin: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.ResumeSection{
+    font-size: 10pt;
 }
+.SectionHeader{
+    font-weight: bold;
+    font-size: 10pt;
+    border-bottom: 1px solid black;
+    margin-bottom: 0;
+}
+.ResumeItem {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.ItemHeader {
+    display: flex;
+}
+.OrganizationTitle {
+    font-weight: bold;
+    width: 50%;
+    margin: 0;
+}
+.LocationTitle {
+    font-weight: bold;
+    width: 50%;
+    text-align: right;
+    margin: 0;
+}
+.ResumeRole {
+    margin: 0;
+    margin-bottom: 1vh;
+}
+.RoleHeader {
+    font-style: italic;
+    display: flex;
+}
+.RoleTitle {
+    width: 50%;
+    margin: 0;
+}
+.RoleDates {
+    width: 50%;
+    text-align: right;
+    margin: 0;
+}
+.ResumeBulletList {
+    margin: 0;
+}
+.ResumeBullet {
+    font-size: 10pt;
+}
+.FooterBullet {
+    font-size: 10pt;
+    margin: 0;
 }
