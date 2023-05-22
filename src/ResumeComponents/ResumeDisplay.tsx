@@ -12,7 +12,7 @@ const ResumeDisplay: React.FC = () => {
   const ctxt = useContext(CVContext)
   const resume = ctxt.cvProfile.resumes[0]
   const handleTestFunction = () => {
-    ctxt.editEmail("New Email Test")
+    ctxt.editField("name","Lior Ben-David")
   }
   
   return (

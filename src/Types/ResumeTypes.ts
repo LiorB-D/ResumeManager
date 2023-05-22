@@ -37,9 +37,9 @@ export class Resume {
 
 export class CVProfile extends Resume{
     resumes: Resume[]
+    currentEditing: number = 0
     constructor(name: string, email: string, phone: string, linkedin: string, sections: ResumeSection[], footer: ResumeFooter | undefined, resumes: Resume[]) {
         super(name, email, phone, linkedin, sections, footer)
-        this.resumes = resumes
+        this.resumes = [this,...resumes]
     }
-
 }
