@@ -1,14 +1,23 @@
 import React from "react";
 import { Resume } from "../Types/ResumeTypes";
 import ResumeHeader from "./ResumeHeader";
+import { useContext } from "react";
+import {CVContext} from '../State/CVContext';
 
-type Props = {
-  resume: Resume;
-};
 
-const ResumeDisplay: React.FC<Props> = ({ resume }) => {
+
+
+const ResumeDisplay: React.FC = () => {
+
+  const ctxt = useContext(CVContext)
+  const resume = ctxt.cvProfile.resumes[0]
+  const handleTestFunction = () => {
+    ctxt.editEmail("New Email Test")
+  }
+  
   return (
     <div className="ResumePage">
+      <button onClick={handleTestFunction}>Test Function</button>
       <ResumeHeader
         name={resume.name}
         email={resume.email}
